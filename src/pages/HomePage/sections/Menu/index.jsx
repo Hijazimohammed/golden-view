@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../../components/SectionTitle';
 import { SectionSubTitle } from '../../../../components/SectionSubtitle';
-import { salaryFormat } from '../../../../utils';
 import { MenuData } from '../../../../mock/data';
 import { MenuItem } from './MenuItem';
 
