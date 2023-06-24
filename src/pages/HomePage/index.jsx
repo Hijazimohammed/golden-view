@@ -6,6 +6,7 @@ import { Special } from './sections/Special';
 import { OurMenu } from './sections/Menu';
 import { JounUS } from './sections/JoinUs';
 import { Cooking } from './sections/Cooking';
+import { Info } from './sections/Info';
 
 const mainBackground = window.location.origin + '/assets/main-background.gif';
 export const HomePage = () => {
@@ -18,6 +19,7 @@ export const HomePage = () => {
         <OurMenu />
         <JounUS />
         <Cooking />
+        <Info />
       </Main>
     </>
   );
