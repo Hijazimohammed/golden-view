@@ -14,8 +14,9 @@ export const OurMenu = () => {
         <SectionSubTitle center>Our Menu</SectionSubTitle>
       </div>
       <MenuDiv>
-        {MenuData.map((item) => (
+        {MenuData.map((item, index) => (
           <MenuItem
+            key={index}
             image={item.img}
             title={item.title}
             desc={item.desc}

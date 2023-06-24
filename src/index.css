@@ -47,11 +47,12 @@
   --large: 215px;
   --md: 177px;
 
-  --fz-nav-btn: 21px;
   --fz-headline: 45px;
   --fz-sub-headline: 36px;
-  --fz-mmd: 20px;
+  --fz-large: 32px;
   --fz-md: 24px;
+  --fz-nav-btn: 21px;
+  --fz-mmd: 20px;
   --fz-m-smal: 16px;
   --fz-small: 14px;
 }
@@ -89,7 +90,9 @@ a {
 .fz-nav-btn {
   font-size: var(--fz-nav-btn);
 }
-
+.fz-large {
+  font-size: var(--fz-large);
+}
 .bc-nav-btn {
   background-color: var(--nav-btn-bc);
 }
@@ -114,7 +117,7 @@ a {
 }
 .section-title {
   color: var(--section-title);
-  font-size: 36px;
+  font-size: var(--fz-sub-headline);
   font-family: 'Dancing Script';
   font-weight: 700;
   letter-spacing: 3.6px;
@@ -140,4 +143,23 @@ a {
   line-height: 155.3%;
   letter-spacing: 1.82px;
   text-transform: capitalize;
+}
+.joinUs-title {
+  width: 466px;
+  height: 70px;
+  color: var(--section-subtitle);
+  text-align: center;
+  font-size: var(--fz-sub-headline);
+  font-family: 'Dancing Script';
+  letter-spacing: 3.6px;
+}
+.joinUs-subTitle {
+  color: var(--section-title);
+  text-align: center;
+  font-size: var(--fz-large);
+  font-weight: 800;
+  letter-spacing: 0.64px;
+}
+.joinus-border {
+  border: 2px solid #fffccc;
 }
