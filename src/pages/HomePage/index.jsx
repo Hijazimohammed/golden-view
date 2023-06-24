@@ -3,6 +3,8 @@ import { Header } from './sections/Header';
 import styled from 'styled-components';
 import { AboutUs } from './sections/AboutUs';
 import { Special } from './sections/Special';
+import { OurMenu } from './sections/Menu';
+import { JounUS } from './sections/JoinUs';
 
 const mainBackground = window.location.origin + '/assets/main-background.gif';
 export const HomePage = () => {
@@ -12,6 +14,8 @@ export const HomePage = () => {
       <Main>
         <AboutUs />
         <Special />
+        <OurMenu />
+        <JounUS />
       </Main>
     </>
   );

@@ -2,33 +2,38 @@ import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../../components/SectionTitle';
 import { SectionSubTitle } from '../../../../components/SectionSubtitle';
-import { specialData } from '../../../../mock/data';
-import { Card } from './Card';
+import { salaryFormat } from '../../../../utils';
+import { MenuData } from '../../../../mock/data';
+import { MenuItem } from './MenuItem';
 
-export const Special = () => {
+export const OurMenu = () => {
   return (
     <Section>
       <div className='special-text'>
-        <SectionTitle center>Special</SectionTitle>
-        <SectionSubTitle center>What makes us special</SectionSubTitle>
+        <SectionTitle center>Straight From Kitchen</SectionTitle>
+        <SectionSubTitle center>Our Menu</SectionSubTitle>
       </div>
-      <Cards>
-        {specialData.map((d) => (
-          <Card key={d.title} icon={d.icon} title={d.title} desc={d.desc} />
+      <MenuDiv>
+        {MenuData.map((item) => (
+          <MenuItem
+            image={item.img}
+            title={item.title}
+            desc={item.desc}
+            price={item.price}
+          />
         ))}
-      </Cards>
+      </MenuDiv>
     </Section>
   );
 };
-
 const Section = styled.section`
-  background: rgba(16, 20, 24, 0.7);
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 3rem 0;
   gap: 3rem;
+
   .special-text {
     display: flex;
     align-items: center;
@@ -37,10 +42,14 @@ const Section = styled.section`
     gap: 1rem;
   }
 `;
-const Cards = styled.div`
+
+const MenuDiv = styled.div`
+  width: 90%;
+  height: 601px;
+  flex-shrink: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  gap: 4rem;
+  justify-content: center;
   flex-wrap: wrap;
 `;
