@@ -1,18 +1,35 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('./fonts/Roboto-Black.ttf'), url('./fonts/Roboto-BlackItalic.ttf'),
-    url('./fonts/Roboto-Bold.ttf'), url('./fonts/Roboto-BoldItalic.ttf'),
-    url('./fonts/Roboto-Italic.ttf'), url('./fonts/Roboto-Light.ttf'),
-    url('./fonts/Roboto-LightItalic.ttf'), url('./fonts/Roboto-Medium.ttf'),
-    url('./fonts/Roboto-MediumItalic.ttf'), url('./fonts/Roboto-Regular.ttf'),
-    url('./fonts/Roboto-BoldCondensed.ttf'),
-    url('./fonts/Roboto-BoldCondensedItalic.ttf'),
-    url('./fonts/Roboto-Condensed.ttf'),
-    url('./fonts/Roboto-CondensedItalic.ttf'), url('./fonts/Roboto-Thin.ttf'),
-    url('./fonts/Roboto-ThinItalic.ttf');
+  src: url('./fonts/roboto/Roboto-Black.ttf'),
+    url('./fonts/roboto/Roboto-BlackItalic.ttf'),
+    url('./fonts/roboto/Roboto-Bold.ttf'),
+    url('./fonts/roboto/Roboto-BoldItalic.ttf'),
+    url('./fonts/roboto/Roboto-Italic.ttf'),
+    url('./fonts/roboto/Roboto-Light.ttf'),
+    url('./fonts/roboto/Roboto-LightItalic.ttf'),
+    url('./fonts/roboto/Roboto-Medium.ttf'),
+    url('./fonts/roboto/Roboto-MediumItalic.ttf'),
+    url('./fonts/roboto/Roboto-Regular.ttf'),
+    url('./fonts/roboto/Roboto-BoldCondensed.ttf'),
+    url('./fonts/roboto/Roboto-BoldCondensedItalic.ttf'),
+    url('./fonts/roboto/Roboto-Condensed.ttf'),
+    url('./fonts/roboto/Roboto-CondensedItalic.ttf'),
+    url('./fonts/roboto/Roboto-Thin.ttf'),
+    url('./fonts/roboto/Roboto-ThinItalic.ttf');
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('./fonts/dancing/DancingScript-Bold.ttf'),
+    url('./fonts/dancing/DancingScript-Medium.ttf'),
+    url('./fonts/dancing/DancingScript-Regular.ttf'),
+    url('./fonts/dancing/DancingScript-SemiBold.ttf'),
+    url('./fonts/dancing/DancingScript-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --white: #fff;
   --main-color: #ffffcc;
@@ -20,13 +37,18 @@
   --nav-background: #101418;
   --nav-btn-bc: #a08040;
   --border-color: #fffccc;
+  --section-title: #ffce6d;
+  --section-subtitle: #fffffc;
 
   /* button width */
   --x-large: 272px;
   --large: 215px;
+  --md: 177px;
 
   --fz-nav-btn: 21px;
   --fz-headline: 45px;
+  --fz-sub-headline: 36px;
+  --fz-small: 14px;
 }
 * {
   margin: 0;
@@ -50,6 +72,9 @@ a {
 .large {
   width: var(--large);
 }
+.md {
+  width: var(--md);
+}
 
 .fz-nav-btn {
   font-size: var(--fz-nav-btn);
@@ -62,9 +87,44 @@ a {
 .hero-btn-border {
   border: 2px solid var(--border-color);
 }
+.h-44 {
+  height: 44px;
+}
 .height55 {
   height: 55px;
 }
 .height100 {
   height: 100%;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.section-title {
+  color: var(--section-title);
+  font-size: 36px;
+  font-family: 'Dancing Script';
+  font-weight: 700;
+  letter-spacing: 3.6px;
+}
+.section-subtitle {
+  display: flex;
+  width: 694px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: var(--section-subtitle);
+  font-size: 30px;
+  text-transform: capitalize;
+  line-height: 117.3%;
+}
+
+.section-paragraph {
+  display: flex;
+  width: 568px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: var(--section-subtitle);
+  font-size: 14px;
+  line-height: 155.3%;
+  letter-spacing: 1.82px;
+  text-transform: capitalize;
 }

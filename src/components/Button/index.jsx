@@ -9,12 +9,13 @@ export const Button = ({
   height,
   border,
   text,
+  m,
 }) => {
   return (
     <ButtonContainer
       className={`${background ? background : ''} ${width ? width : ''} ${
         border ? border : ''
-      } ${height ? height : 'height100'}`}>
+      } ${height ? height : 'height100'} ${m ? m : ''}`}>
       {spans && <Span />}
       <Btn className={fz ? fz : ''}>{text}</Btn>
       {spans && <Span />}
