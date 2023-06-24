@@ -39,6 +39,8 @@
   --border-color: #fffccc;
   --section-title: #ffce6d;
   --section-subtitle: #fffffc;
+  --border-card: #ffce6d;
+  --background-card: rgba(160, 128, 64, 0.3);
 
   /* button width */
   --x-large: 272px;
@@ -48,6 +50,7 @@
   --fz-nav-btn: 21px;
   --fz-headline: 45px;
   --fz-sub-headline: 36px;
+  --fz-md: 24px;
   --fz-small: 14px;
 }
 * {
@@ -75,7 +78,12 @@ a {
 .md {
   width: var(--md);
 }
-
+.fz-md {
+  font-size: var(--fz-md);
+}
+.fz-small {
+  font-size: var(--fz-small);
+}
 .fz-nav-btn {
   font-size: var(--fz-nav-btn);
 }
@@ -98,6 +106,9 @@ a {
 }
 .mt-2 {
   margin-top: 2rem;
+}
+.text-center {
+  text-align: center;
 }
 .section-title {
   color: var(--section-title);

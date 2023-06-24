@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const SectionTitle = ({ children }) => {
-  return <h2 className='section-title'>{children}</h2>;
+export const SectionTitle = ({ children, center }) => {
+  return (
+    <h2 className={`section-title ${center ? 'text-center' : ''}`}>
+      {children}
+    </h2>
+  );
 };

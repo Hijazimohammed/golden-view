@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './sections/Header';
 import styled from 'styled-components';
 import { AboutUs } from './sections/AboutUs';
+import { Special } from './sections/Special';
 
 const mainBackground = window.location.origin + '/assets/main-background.gif';
 export const HomePage = () => {
@@ -10,6 +11,7 @@ export const HomePage = () => {
       <Header />
       <Main>
         <AboutUs />
+        <Special />
       </Main>
     </>
   );
