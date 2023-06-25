@@ -8,7 +8,7 @@ import { MenuItem } from './MenuItem';
 export const OurMenu = () => {
   return (
     <Section>
-      <div className='special-text'>
+      <div className='menu-text'>
         <SectionTitle center>Straight From Kitchen</SectionTitle>
         <SectionSubTitle center>Our Menu</SectionSubTitle>
       </div>
@@ -34,7 +34,7 @@ const Section = styled.section`
   padding: 3rem 0;
   gap: 3rem;
 
-  .special-text {
+  .menu-text {
     display: flex;
     align-items: center;
     justify-content: center;
