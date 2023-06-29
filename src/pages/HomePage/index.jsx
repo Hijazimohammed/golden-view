@@ -8,6 +8,7 @@ import { JounUS } from './sections/JoinUs';
 import { Cooking } from './sections/Cooking';
 import { Info } from './sections/Info';
 import { Reviews } from './sections/Reviews';
+import { Blogs } from './sections/Blogs';
 
 const mainBackground = window.location.origin + '/assets/main-background.gif';
 export const HomePage = () => {
@@ -22,6 +23,7 @@ export const HomePage = () => {
         <Cooking />
         <Info />
         <Reviews />
+        <Blogs />
       </Main>
     </>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Nav } from './Navbar';
-import { HeroSection } from './HeroSection';
+import { HeroSection } from '../../../../components/HeroSection';
+import { Nav } from '../../../../components/Navbar';
 
 const background = window.location.origin + '/assets/background-header.svg';
 

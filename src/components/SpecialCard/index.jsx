@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from '../../../../../components/Image';
+import { Image } from '../Image';
 
 export const Card = ({ icon, title, desc }) => {
   return (
@@ -15,7 +15,6 @@ export const Card = ({ icon, title, desc }) => {
 const CardContainer = styled.div`
   width: 384px;
   height: 455px;
-  flex-shrink: 0;
   border: 1px dashed var(--border-card);
   background: var(--background-card);
   display: flex;

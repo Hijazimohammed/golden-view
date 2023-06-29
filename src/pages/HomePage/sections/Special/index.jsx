@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../../components/SectionTitle';
 import { SectionSubTitle } from '../../../../components/SectionSubtitle';
-import { specialData } from '../../../../mock/data';
-import { Card } from './Card';
+import { specialData } from '../../../../mock/specialData';
+import { Card } from '../../../../components/SpecialCard';
 
 export const Special = () => {
   return (

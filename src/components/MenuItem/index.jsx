@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from '../../../../../components/Image';
-import { salaryFormat } from '../../../../../utils';
+import { Image } from '../Image';
+import { salaryFormat } from '../../utils';
 
 export const MenuItem = ({ image, title, desc, price }) => {
   return (

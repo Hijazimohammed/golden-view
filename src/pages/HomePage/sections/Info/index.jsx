@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { infoData } from '../../../../mock/data';
-import { SingleInfo } from './SingleInfo';
+import { infoData } from '../../../../mock/infoData';
+import { SingleInfo } from '../../../../components/SingleInfo';
 
 export const Info = () => {
   return (

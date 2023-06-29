@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Logo } from '../../../../../components/Logo';
+import { Logo } from '../Logo';
 import { Menu } from './MenuList';
-import { Button } from '../../../../../components/Button';
+import { Button } from '../Button';
 
 export const Nav = () => {
   return (
@@ -21,13 +21,10 @@ export const Nav = () => {
 };
 
 const Navbar = styled.nav`
-  width: 988px;
+  width: 80%;
   height: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--nav-background);
-  /* position: absolute;
-  top: 131px;
-  left: 226px; */
 `;

@@ -116,6 +116,9 @@ a {
 .hero-btn-border {
   border: 2px solid var(--border-color);
 }
+.h-20 {
+  height: 20px;
+}
 .h-44 {
   height: 44px;
 }
@@ -178,4 +181,11 @@ a {
 }
 .joinus-border {
   border: 2px solid #fffccc;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+.fdc {
+  flex-direction: column;
 }

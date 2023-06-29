@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../../components/SectionTitle';
 import { SectionSubTitle } from '../../../../components/SectionSubtitle';
-import { ReviewData } from '../../../../mock/data';
-import { ReviewCard } from './ReviewCard';
+import { ReviewData } from '../../../../mock/reviewData';
+import { ReviewCard } from '../../../../components/ReviewCard';
 
 export const Reviews = () => {
   return (

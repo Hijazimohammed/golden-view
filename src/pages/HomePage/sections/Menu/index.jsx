@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../../components/SectionTitle';
 import { SectionSubTitle } from '../../../../components/SectionSubtitle';
-import { MenuData } from '../../../../mock/data';
-import { MenuItem } from './MenuItem';
+import { MenuData } from '../../../../mock/menuData';
+import { MenuItem } from '../../../../components/MenuItem';
 
 export const OurMenu = () => {
   return (
@@ -46,7 +46,6 @@ const Section = styled.section`
 const MenuDiv = styled.div`
   width: 90%;
   height: 601px;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;

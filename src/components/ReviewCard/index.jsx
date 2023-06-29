@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from '../../../../../components/Image';
+import { Image } from '../Image';
 
 const star = window.location.origin + '/assets/star.svg';
 export const ReviewCard = ({ image, name, stars, desc }) => {

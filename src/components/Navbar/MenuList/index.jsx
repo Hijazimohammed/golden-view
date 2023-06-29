@@ -1,27 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from '../../../../../../components/Image';
+
+import { Image } from '../../Image';
+import { navbarData } from '../../../mock/data';
 
 const SerchIcon = window.location.origin + '/assets/search.svg';
 
 export const Menu = () => {
   return (
     <List>
-      <ListItem>
-        <ListItemLink>home</ListItemLink>
-      </ListItem>
-      <ListItem>
-        <ListItemLink>about us</ListItemLink>
-      </ListItem>
-      <ListItem>
-        <ListItemLink>special</ListItemLink>
-      </ListItem>
-      <ListItem>
-        <ListItemLink>menu</ListItemLink>
-      </ListItem>
-      <ListItem>
-        <ListItemLink>blogs</ListItemLink>
-      </ListItem>
+      {navbarData.map((d) => (
+        <ListItem key={d.title}>
+          <ListItemLink>{d.title}</ListItemLink>
+        </ListItem>
+      ))}
       <ListItem>
         <ListItemLink>
           <Image ImageSrc={SerchIcon} title='serch Icon' />
@@ -42,4 +34,5 @@ const ListItemLink = styled.a`
   color: var(--main-color);
   text-transform: capitalize;
   font-weight: 700;
+  cursor: pointer;
 `;
