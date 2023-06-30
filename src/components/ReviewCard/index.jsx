@@ -21,7 +21,9 @@ export const ReviewCard = ({ image, name, stars, desc }) => {
           </div>
         </div>
       </PersonalData>
-      <Paragraph>{desc}</Paragraph>
+      <Paragraph>
+        <q>{desc}</q>
+      </Paragraph>
     </Div>
   );
 };
