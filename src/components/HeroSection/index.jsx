@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from '../Button';
+import { devices } from '../Container/breakpoints';
 
 export const HeroSection = () => {
   return (
@@ -37,12 +38,18 @@ const Section = styled.section`
       color: var(--border-color);
       display: flex;
       flex-wrap: wrap;
-      /* width: 355px; */
       text-align: center;
       text-transform: capitalize;
     }
   }
   p {
     color: var(--white);
+  }
+  @media (${devices.mobileM}) {
+    p {
+      width: auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
   }
 `;

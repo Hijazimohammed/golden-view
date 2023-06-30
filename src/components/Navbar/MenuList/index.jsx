@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Image } from '../../Image';
 import { navbarData } from '../../../mock/data';
+import { devices } from '../../Container/breakpoints';
 
 const SerchIcon = window.location.origin + '/assets/search.svg';
 
@@ -28,6 +29,19 @@ const List = styled.ul`
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  @media (${devices.laptopM}) {
+    gap: 30px;
+  }
+  @media (${devices.tabletL}) {
+    gap: 20px;
+  }
+
+  @media (${devices.tabletM}) {
+    gap: 10px;
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 const ListItem = styled.li``;
 const ListItemLink = styled.a`

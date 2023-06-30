@@ -42,7 +42,6 @@
   --border-card: #ffce6d;
   --background-card: rgba(160, 128, 64, 0.3);
 
-  /* button width */
   --x-large: 272px;
   --large: 215px;
   --md: 177px;
@@ -143,9 +142,7 @@ a {
 }
 .section-subtitle {
   display: flex;
-  width: 694px;
   flex-direction: column;
-  flex-shrink: 0;
   color: var(--section-subtitle);
   font-size: 30px;
   text-transform: capitalize;
@@ -154,7 +151,7 @@ a {
 
 .section-paragraph {
   display: flex;
-  width: 568px;
+
   flex-direction: column;
   flex-shrink: 0;
   color: var(--section-subtitle);

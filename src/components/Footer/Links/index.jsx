@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { links } from '../../../mock/footer';
+import { devices } from '../../Container/breakpoints';
 
 const Links = () => {
   return (
@@ -42,6 +43,10 @@ const Div = styled.div`
       letter-spacing: 2px;
       text-transform: capitalize;
     }
+  }
+  @media (${devices.tabletM}) {
+    width: 100%;
+    padding-left: 2rem;
   }
 `;
 export default Links;

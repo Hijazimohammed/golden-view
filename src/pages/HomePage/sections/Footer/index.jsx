@@ -5,6 +5,7 @@ import Links from '../../../../components/Footer/Links';
 import ContactUs from '../../../../components/Footer/ContactUs';
 import { Subscribe } from '../../../../components/Footer/Subscribe';
 import { Copyright } from '../../../../components/Footer/Copyright';
+import { devices } from '../../../../components/Container/breakpoints';
 
 const Footer = () => {
   return (
@@ -35,6 +36,16 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (${devices.tabletM}) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  @media (${devices.laptopM}) {
+    width: 85%;
+  }
+  @media (${devices.tabletL}) {
+    width: 90%;
+  }
 `;
 
 export default Footer;

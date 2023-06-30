@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Image } from '../Image';
+import { devices } from '../Container/breakpoints';
 
 const star = window.location.origin + '/assets/star.svg';
 export const ReviewCard = ({ image, name, stars, desc }) => {
@@ -37,6 +38,11 @@ const Div = styled.div`
   background: rgba(16, 20, 24, 0.7);
   padding: 38px 68px;
   gap: 2rem;
+  @media (${devices.tabletM}) {
+    width: 95%;
+
+    padding: 2rem;
+  }
 `;
 const PersonalData = styled.div`
   width: 100%;
@@ -63,4 +69,8 @@ const Paragraph = styled.p`
   font-size: var(--fz-m-small);
   letter-spacing: 2.08px;
   font-weight: normal;
+  @media (${devices.tabletM}) {
+    width: auto;
+    height: auto;
+  }
 `;

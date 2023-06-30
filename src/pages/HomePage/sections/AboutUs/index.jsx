@@ -6,6 +6,7 @@ import { SectionSubTitle } from '../../../../components/SectionSubtitle';
 import { SectionParagraph } from '../../../../components/SectionParagraph';
 import { Button } from '../../../../components/Button';
 import Container from '../../../../components/Container';
+import { devices } from '../../../../components/Container/breakpoints';
 
 const AboutImage = window.location.origin + '/assets/about-us.png';
 export const AboutUs = () => {
@@ -49,15 +50,39 @@ const Section = styled.section`
   padding: 5rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
+  @media (${devices.tabletM}) {
+    flex-direction: column;
+  }
 `;
 const RightDiv = styled.div`
   width: 60%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
+
+  @media (${devices.tabletM}) {
+    width: 100%;
+  }
 `;
 const LeftDiv = styled.div`
   width: 40%;
+  img {
+    width: 100%;
+  }
+
+  @media (${devices.laptopM}) {
+    width: 35%;
+  }
+  @media (${devices.tabletM}) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    img {
+      width: 90%;
+    }
+  }
 `;

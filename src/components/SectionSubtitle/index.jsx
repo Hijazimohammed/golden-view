@@ -1,9 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+import { devices } from '../Container/breakpoints';
 
 export const SectionSubTitle = ({ children, center }) => {
   return (
-    <h3 className={`section-subtitle ${center ? 'text-center' : ''}`}>
+    <H3 className={`section-subtitle ${center ? 'text-center' : ''}`}>
       {children}
-    </h3>
+    </H3>
   );
 };
+const H3 = styled.h3`
+  width: 694px;
+  @media (${devices.laptopM}) {
+    width: auto;
+  }
+`;

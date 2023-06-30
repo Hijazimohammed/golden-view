@@ -4,6 +4,7 @@ import { SectionTitle } from '../../../../components/SectionTitle';
 import { SectionSubTitle } from '../../../../components/SectionSubtitle';
 import { MenuData } from '../../../../mock/menuData';
 import { MenuItem } from '../../../../components/MenuItem';
+import { devices } from '../../../../components/Container/breakpoints';
 
 export const OurMenu = () => {
   return (
@@ -51,4 +52,13 @@ const MenuDiv = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  @media (${devices.laptopM}) {
+    width: 95%;
+  }
+  @media (${devices.tabletL}) {
+    width: 99%;
+  }
+  @media (${devices.tabletM}) {
+    height: auto;
+  }
 `;

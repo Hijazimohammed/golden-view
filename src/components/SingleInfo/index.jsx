@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Image } from '../Image';
+import { devices } from '../Container/breakpoints';
 
 export const SingleInfo = ({ icon, number, desc }) => {
   return (
@@ -32,6 +33,12 @@ const Div = styled.div`
       color: var(--section-subtitle);
       text-align: center;
       text-transform: capitalize;
+    }
+  }
+  @media (${devices.mobileM}) {
+    gap: 1rem;
+    .text {
+      width: 150px;
     }
   }
 `;

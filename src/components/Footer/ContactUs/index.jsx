@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { contactUs } from '../../../mock/footer';
 import { Image } from '../../Image';
+import { devices } from '../../Container/breakpoints';
 
 const ContactUs = () => {
   return (
@@ -51,6 +52,10 @@ const Div = styled.div`
         text-transform: capitalize;
       }
     }
+  }
+  @media (${devices.tabletM}) {
+    width: 100%;
+    padding-left: 2rem;
   }
 `;
 export default ContactUs;

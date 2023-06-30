@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Image } from '../Image';
+import { devices } from '../Container/breakpoints';
 
 export const BlogsCard = ({ image, title, desc, reversed }) => {
   return (
@@ -16,14 +17,14 @@ export const BlogsCard = ({ image, title, desc, reversed }) => {
 };
 
 const Div = styled.div`
-  width: 410px;
+  width: 33.333%;
   height: 526.715px;
   background: rgba(16, 20, 24, 0.7);
   display: flex;
   align-items: center;
   justify-content: space-between;
   img {
-    width: 411px;
+    width: 100%;
     height: 299px;
     object-fit: cover;
   }
@@ -43,7 +44,6 @@ const Div = styled.div`
       text-transform: capitalize;
     }
     p {
-      width: 302px;
       height: 68px;
       color: var(--section-subtitle);
       font-size: var(--fz-m-smal);
@@ -57,6 +57,23 @@ const Div = styled.div`
       cursor: pointer;
       height: 25px;
       border-bottom: 1px solid rgba(255, 206, 109, 1);
+    }
+  }
+
+  @media (${devices.laptopM}) {
+    width: 30%;
+  }
+  @media (${devices.tabletM}) {
+    div {
+      gap: 3rem;
+    }
+  }
+  @media (${devices.mobileM}) {
+    width: 90%;
+
+    height: auto;
+    div {
+      gap: 1rem;
     }
   }
 `;

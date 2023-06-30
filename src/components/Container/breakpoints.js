@@ -1,13 +1,15 @@
 const Sizes = {
   mobile: '576px',
-  tablet: '768px',
-  laptopM: '992px',
+  tabletM: '768px',
+  tabletL: '992px',
+  laptopM: '1160px',
   laptopL: '1400px',
 };
 export const devices = {
-  mobileS: `(max-width: ${Sizes.mobile})`,
-  mobileM: `(min-width: ${Sizes.mobile})`,
-  tablet: `(min-width: ${Sizes.tablet})`,
-  laptopM: `(min-width: ${Sizes.laptopM})`,
-  laptopL: `(min-width: ${Sizes.laptopL})`,
+  mobileS: `(min-width: ${Sizes.mobile})`,
+  mobileM: `(max-width: ${Sizes.mobile})`,
+  tabletM: `(max-width: ${Sizes.tabletM})`,
+  tabletL: `(max-width: ${Sizes.tabletL})`,
+  laptopM: `(max-width: ${Sizes.laptopM})`,
+  laptopL: `(max-width: ${Sizes.laptopL})`,
 };

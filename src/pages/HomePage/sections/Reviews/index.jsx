@@ -4,6 +4,7 @@ import { SectionTitle } from '../../../../components/SectionTitle';
 import { SectionSubTitle } from '../../../../components/SectionSubtitle';
 import { ReviewData } from '../../../../mock/reviewData';
 import { ReviewCard } from '../../../../components/ReviewCard';
+import { devices } from '../../../../components/Container/breakpoints';
 
 export const Reviews = () => {
   return (
@@ -35,7 +36,6 @@ const Section = styled.section`
   flex-direction: column;
   padding: 3rem 0;
   gap: 3rem;
-  /* overflow-x: auto; */
   overflow-x: hidden;
 
   .review-text {
@@ -51,11 +51,10 @@ const Section = styled.section`
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    /* margin-left: 55rem; */
   }
 
   &::-webkit-scrollbar {
-    width: 0;
+    width: none;
   }
 
   &::-webkit-scrollbar-track {
@@ -66,5 +65,11 @@ const Section = styled.section`
     background-color: rgba(16, 20, 24, 0.7);
     border-radius: 10px;
     border: none;
+  }
+  @media (${devices.tabletM}) {
+    .review-cards {
+      width: 95%;
+      flex-direction: column;
+    }
   }
 `;

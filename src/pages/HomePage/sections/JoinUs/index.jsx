@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Image } from '../../../../components/Image';
 import { Button } from '../../../../components/Button';
+import { devices } from '../../../../components/Container/breakpoints';
 
-const right = window.location.origin + '/assets/joinUs-right.png';
-const left = window.location.origin + '/assets/join-us-left.png';
+const right = window.location.origin + '/assets/Component 4.png';
 
 export const JounUS = () => {
   return (
@@ -40,7 +40,7 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: hidden;
+  overflow: hidden;
 
   .join-us {
     display: flex;
@@ -49,28 +49,19 @@ const Section = styled.section`
     width: 100%;
     height: 100%;
     .images {
-      background: url(${left});
-      background-position-x: 100px;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-        transform: translate(0px, -3px);
+        transform: translate(100px, 6px);
       }
     }
     .images2 {
-      background: url(${left});
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-        transform: translate(-100px, -3px);
+        transform: translate(0px, 6px);
       }
     }
     .join-text {
@@ -81,6 +72,48 @@ const Section = styled.section`
       align-items: center;
       justify-content: flex-start;
       gap: 2rem;
+    }
+  }
+  @media (${devices.tabletL}) {
+    .join-us {
+      .images {
+        img {
+          transform: translate(200px, -3px);
+        }
+      }
+      .images2 {
+        img {
+          transform: translate(-100px, 6px);
+        }
+      }
+    }
+  }
+  @media (${devices.tabletM}) {
+    .join-us {
+      .images {
+        img {
+          transform: translate(260px, -3px);
+        }
+      }
+      .images2 {
+        img {
+          transform: translate(-175px, 6px);
+        }
+      }
+    }
+  }
+  @media (${devices.mobileM}) {
+    .join-us {
+      .images {
+        img {
+          display: none;
+        }
+      }
+      .images2 {
+        img {
+          display: none;
+        }
+      }
     }
   }
 `;

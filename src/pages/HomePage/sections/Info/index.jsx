@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { infoData } from '../../../../mock/infoData';
 import { SingleInfo } from '../../../../components/SingleInfo';
+import { devices } from '../../../../components/Container/breakpoints';
 
 export const Info = () => {
   return (
@@ -32,5 +33,18 @@ const Section = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  @media (${devices.tabletL}) {
+    .info {
+      width: 85%;
+    }
+  }
+  @media (${devices.mobileM}) {
+    height: auto;
+    padding: 2rem 0;
+    .info {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 `;

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Image } from '../../Image';
 import { Button } from '../../Button';
+import { devices } from '../../Container/breakpoints';
 
 const icon = window.location.origin + '/assets/mail.svg';
 export const Subscribe = () => {
@@ -67,6 +68,25 @@ const Div = styled.div`
     button {
       color: var(--section-subtitle);
       font-size: var(--fz-mmd);
+    }
+  }
+  @media (${devices.tabletM}) {
+    padding: 1rem 0;
+    height: auto;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  @media (${devices.mobileM}) {
+    form {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      input {
+        width: 50%;
+      }
+      button {
+        width: 40%;
+      }
     }
   }
 `;
