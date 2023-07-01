@@ -38,9 +38,12 @@ const Div = styled.div`
   background: rgba(16, 20, 24, 0.7);
   padding: 38px 68px;
   gap: 2rem;
+  @media (${devices.tabletL}) {
+    width: 60%;
+  }
   @media (${devices.tabletM}) {
     width: 95%;
-
+    height: auto;
     padding: 2rem;
   }
 `;
@@ -69,6 +72,9 @@ const Paragraph = styled.p`
   font-size: var(--fz-m-small);
   letter-spacing: 2.08px;
   font-weight: normal;
+  @media (${devices.tabletL}) {
+    width: auto;
+  }
   @media (${devices.tabletM}) {
     width: auto;
     height: auto;

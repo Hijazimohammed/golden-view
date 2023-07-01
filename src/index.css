@@ -86,6 +86,9 @@ ol {
 a {
   text-decoration: none;
 }
+svg {
+  cursor: pointer;
+}
 .xlarge {
   width: var(--x-large);
 }
