@@ -8,7 +8,7 @@ import { devices } from '../../../../components/Container/breakpoints';
 
 export const OurMenu = () => {
   return (
-    <Section>
+    <Section id='menu'>
       <div className='menu-text'>
         <SectionTitle center>Straight From Kitchen</SectionTitle>
         <SectionSubTitle center>Our Menu</SectionSubTitle>

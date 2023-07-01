@@ -7,7 +7,7 @@ import { Card } from '../../../../components/SpecialCard';
 
 export const Special = () => {
   return (
-    <Section>
+    <Section id='special'>
       <div className='special-text'>
         <SectionTitle center>Special</SectionTitle>
         <SectionSubTitle center>What makes us special</SectionSubTitle>

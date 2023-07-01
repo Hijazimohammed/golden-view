@@ -12,7 +12,7 @@ export const Menu = () => {
     <List>
       {navbarData.map((d) => (
         <ListItem key={d.title}>
-          <ListItemLink>{d.title}</ListItemLink>
+          <ListItemLink href={d.url}>{d.title}</ListItemLink>
         </ListItem>
       ))}
       <ListItem>

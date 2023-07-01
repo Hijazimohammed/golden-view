@@ -8,7 +8,7 @@ import { devices } from '../../../../components/Container/breakpoints';
 
 export const Blogs = () => {
   return (
-    <Section>
+    <Section id='blogs'>
       <div className='blogs-text'>
         <SectionTitle center>Blogs</SectionTitle>
         <SectionSubTitle center>words from our food lovers</SectionSubTitle>

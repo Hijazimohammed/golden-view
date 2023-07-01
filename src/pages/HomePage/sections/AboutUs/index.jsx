@@ -11,7 +11,7 @@ import { devices } from '../../../../components/Container/breakpoints';
 const AboutImage = window.location.origin + '/assets/about-us.png';
 export const AboutUs = () => {
   return (
-    <Container>
+    <Container id='about-us'>
       <Section>
         <RightDiv>
           <SectionTitle>About Us</SectionTitle>
