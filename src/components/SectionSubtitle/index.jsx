@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import { devices } from '../Container/breakpoints';
+import { H3 } from './style';
 
 export const SectionSubTitle = ({ children, center }) => {
   return (
@@ -9,9 +8,3 @@ export const SectionSubTitle = ({ children, center }) => {
     </H3>
   );
 };
-const H3 = styled.h3`
-  width: 694px;
-  @media (${devices.laptopM}) {
-    width: auto;
-  }
-`;

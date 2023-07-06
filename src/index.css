@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('./fonts/roboto/Roboto-Black.ttf'),
-    url('./fonts/roboto/Roboto-BlackItalic.ttf'),
-    url('./fonts/roboto/Roboto-Bold.ttf'),
-    url('./fonts/roboto/Roboto-BoldItalic.ttf'),
-    url('./fonts/roboto/Roboto-Italic.ttf'),
-    url('./fonts/roboto/Roboto-Light.ttf'),
-    url('./fonts/roboto/Roboto-LightItalic.ttf'),
-    url('./fonts/roboto/Roboto-Medium.ttf'),
-    url('./fonts/roboto/Roboto-MediumItalic.ttf'),
-    url('./fonts/roboto/Roboto-Regular.ttf'),
-    url('./fonts/roboto/Roboto-BoldCondensed.ttf'),
-    url('./fonts/roboto/Roboto-BoldCondensedItalic.ttf'),
-    url('./fonts/roboto/Roboto-Condensed.ttf'),
-    url('./fonts/roboto/Roboto-CondensedItalic.ttf'),
-    url('./fonts/roboto/Roboto-Thin.ttf'),
-    url('./fonts/roboto/Roboto-ThinItalic.ttf');
+  src: url('/public/Fonts/roboto/Roboto-Black.ttf'),
+    url('/public/Fonts/roboto/Roboto-BlackItalic.ttf'),
+    url('/public/Fonts/roboto/Roboto-Bold.ttf'),
+    url('/public/Fonts/roboto/Roboto-BoldItalic.ttf'),
+    url('/public/Fonts/roboto/Roboto-Italic.ttf'),
+    url('/public/Fonts/roboto/Roboto-Light.ttf'),
+    url('/public/Fonts/roboto/Roboto-LightItalic.ttf'),
+    url('/public/Fonts/roboto/Roboto-Medium.ttf'),
+    url('/public/Fonts/roboto/Roboto-MediumItalic.ttf'),
+    url('/public/Fonts/roboto/Roboto-Regular.ttf'),
+    url('/public/Fonts/roboto/Roboto-BoldCondensed.ttf'),
+    url('/public/Fonts/roboto/Roboto-BoldCondensedItalic.ttf'),
+    url('/public/Fonts/roboto/Roboto-Condensed.ttf'),
+    url('/public/Fonts/roboto/Roboto-CondensedItalic.ttf'),
+    url('/public/Fonts/roboto/Roboto-Thin.ttf'),
+    url('/public/Fonts/roboto/Roboto-ThinItalic.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Dancing Script';
-  src: url('./fonts/dancing/DancingScript-Bold.ttf'),
-    url('./fonts/dancing/DancingScript-Medium.ttf'),
-    url('./fonts/dancing/DancingScript-Regular.ttf'),
-    url('./fonts/dancing/DancingScript-SemiBold.ttf'),
-    url('./fonts/dancing/DancingScript-VariableFont_wght.ttf');
+  src: url('/public/Fonts/dancing/DancingScript-Bold.ttf'),
+    url('/public/Fonts/dancing/DancingScript-Medium.ttf'),
+    url('/public/Fonts/dancing/DancingScript-Regular.ttf'),
+    url('/public/Fonts/dancing/DancingScript-SemiBold.ttf'),
+    url('/public/Fonts/dancing/DancingScript-VariableFont_wght.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -78,6 +78,11 @@
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 700;
+}
+body {
+  background-image: url('/public/assets/main-background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 ul,
 ol {

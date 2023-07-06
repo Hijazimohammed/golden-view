@@ -1,10 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import { SectionTitle } from '../../../../components/SectionTitle';
 import { SectionSubTitle } from '../../../../components/SectionSubtitle';
 import { MenuData } from '../../../../mock/menuData';
 import { MenuItem } from '../../../../components/MenuItem';
-import { devices } from '../../../../components/Container/breakpoints';
+import { MenuDiv, Section } from './style';
 
 export const OurMenu = () => {
   return (
@@ -27,38 +26,3 @@ export const OurMenu = () => {
     </Section>
   );
 };
-const Section = styled.section`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 3rem 0;
-  gap: 3rem;
-
-  .menu-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-  }
-`;
-
-const MenuDiv = styled.div`
-  width: 90%;
-  height: 601px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  @media (${devices.laptopM}) {
-    width: 95%;
-  }
-  @media (${devices.tabletL}) {
-    width: 99%;
-  }
-  @media (${devices.tabletM}) {
-    height: auto;
-  }
-`;
