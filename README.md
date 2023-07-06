@@ -10,4 +10,4 @@ Open [styled-components](https://www.npmjs.com/package/styled-components) to vie
 
 ### `Website Image`
 
-![alt text](Hijazimohammed/golden-view/blob/main/public/assets/website.jpeg)
+![alt text](https://github.com/Hijazimohammed/golden-view/blob/main/public/assets/website.jpeg)
